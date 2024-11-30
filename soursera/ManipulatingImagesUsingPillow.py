@@ -167,16 +167,8 @@ plt.show()
 Question1
 
 use the image babboon.png from this lab or take my image you like.
+
+
 """
 
-baboon = Image.open("../baboon.png")
-im_flip = ImageOps.flip(baboon)
-im_mirror = ImageOps.mirror(baboon)
-plt.figure(figsize = (5,5))
-plt.imshow(im_flip)
-plt.show()
-
-plt.figure(figsize = (5,5))
-plt.imshow(im_mirror)
-plt.show()
 

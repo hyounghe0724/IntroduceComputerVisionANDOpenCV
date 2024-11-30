@@ -1,18 +1,18 @@
 import cv2
 import matplotlib.pyplot as plt
-image =  cv2.imread("../lenna.png")
-print(type(image))
-print(image.shape)
-print(image.max)
-print(image.min)
-
-plt.figure(figsize = (10,10))
-plt.imshow(image)
-#plt.show()
-
-new_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-plt.figure(figsize = (10,10))
-plt.imshow(image)
+# image =  cv2.imread("../lenna.png")
+# print(type(image))
+# print(image.shape)
+# print(image.max)
+# print(image.min)
+#
+# plt.figure(figsize = (10,10))
+# plt.imshow(image)
+# #plt.show()
+#
+# new_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+# plt.figure(figsize = (10,10))
+# plt.imshow(image)
 #plt.show()
 
 #image save
@@ -20,7 +20,7 @@ plt.imshow(image)
 
 """
 GrayScale Images
-"""
+
 image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 print(image_gray.shape)
 
@@ -34,10 +34,12 @@ im_gray = cv2.imread('../barbara.png', cv2.IMREAD_GRAYSCALE)
 plt.figure(figsize = (10,10))
 plt.imshow(im_gray, cmap='gray')
 #plt.show()
+"""
+
 
 """
 Color Channels
-"""
+
 
 baboon = cv2.imread("../baboon.png")
 plt.figure(figsize = (10,10))
@@ -56,10 +58,12 @@ plt.subplot(122)
 plt.imshow(im_bgr, cmap='gray')
 plt.title("Different color channels blue (top), green (middle), red (bottom)")
 plt.show()
+"""
+
 
 """
 Indexing
-"""
+
 
 rows = 256
 plt.figure(figsize = (10, 10))
@@ -102,10 +106,11 @@ baboon_blue[:,:,2] = 0
 plt.figure(figsize = (10, 10))
 plt.imshow(cv2.cvtColor(baboon_blue, cv2.COLOR_BGR2RGB))
 plt.show()
+"""
+
 
 """
 Question 1
-"""
 
 baboon_blue=cv2.imread('../baboon.png')
 baboon_blue=cv2.cvtColor(baboon_blue, cv2.COLOR_BGR2RGB)
@@ -113,3 +118,5 @@ baboon_blue[:,:,2] = 0
 plt.figure(figsize=(10,10))
 plt.imshow(baboon_blue)
 plt.show()
+"""
+
