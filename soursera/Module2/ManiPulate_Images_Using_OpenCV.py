@@ -1,8 +1,5 @@
 import cv2
 import matplotlib.pyplot as plt
-import numpy as np
-
-from soursera.ManipulatingImagesUsingPillow import im_flip
 
 """
 Copying Images
@@ -158,7 +155,7 @@ Question 4
 
 """
 
-im = cv2.imread("../cat.png")
+im = cv2.imread("../../cat.png")
 cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
 im_flip = cv2.flip(im, 0)
 im_mirror = cv2.flip(im, 1)

@@ -42,7 +42,7 @@ for n in range(3, 8):
 Color Channels
 """
 
-baboon = Image.open("../baboon.png")
+baboon = Image.open("../../baboon.png")
 
 red, green, blue = baboon.split()
 #get_concat_h(baboon,red).show()
@@ -115,7 +115,7 @@ plt.figure(figsize =(10,10))
 plt.imshow(baboon_blue)
 plt.show()
 
-lenna = Image.open("../lenna.png")
+lenna = Image.open("../../lenna.png")
 array_lenna = np.array(lenna)
 blue_lenna = array_lenna.copy()
 blue_lenna[:,:,0] = 0

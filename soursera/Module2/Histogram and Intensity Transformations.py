@@ -254,7 +254,7 @@ plt.imshow(thresholing_toy, cmap="gray")
 plt.title("Image After Thresholding")
 plt.show()
 
-image = cv2.imread("../cameraman.jpeg", cv2.IMREAD_GRAYSCALE)
+image = cv2.imread("../../cameraman.jpeg", cv2.IMREAD_GRAYSCALE)
 plt.figure(figsize=(10, 10))
 plt.imshow(image, cmap="gray")
 plt.show()
