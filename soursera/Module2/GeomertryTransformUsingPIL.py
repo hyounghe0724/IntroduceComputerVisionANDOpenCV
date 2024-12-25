@@ -17,7 +17,7 @@ def plot_image(image_1, image_2,title_1="Orignal",title_2="New Image"):
 Geometric Transformations
 """
 
-image = Image.open("D:\ComputerVisionReady\lenna.png")
+image = Image.open("/soursera/Module2/lenna.png")
 plt.imshow(image)
 plt.show()
 

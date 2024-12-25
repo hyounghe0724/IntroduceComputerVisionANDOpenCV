@@ -115,7 +115,7 @@ plt.figure(figsize =(10,10))
 plt.imshow(baboon_blue)
 plt.show()
 
-lenna = Image.open("../../lenna.png")
+lenna = Image.open("lenna.png")
 array_lenna = np.array(lenna)
 blue_lenna = array_lenna.copy()
 blue_lenna[:,:,0] = 0

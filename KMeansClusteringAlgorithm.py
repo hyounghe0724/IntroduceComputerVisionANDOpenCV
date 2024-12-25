@@ -6,7 +6,7 @@ src = cv2.imread("egg.jpg")
 print(src.shape)
 data = src.reshape(-1, 3).astype(np.float32)
 
-K = 13
+K = 30
 criteria = (cv2.TERM_CRITERIA_MAX_ITER + cv2.TermCriteria_EPS, 10, 0.001)
 retval, best_labels, centers = cv2.kmeans(
     data # input data
